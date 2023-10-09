@@ -43,7 +43,7 @@ insertOrMerge = todo
 
 
 -- Creates a Map from a list of pairs.
--- Use foldr and the insertOrMerge function to implement fromListMerge.
+-- Use foldr and the insert function to implement fromList.
 fromList :: Ord k => [(k,v)] -> Map k v
 fromList = todo
 
