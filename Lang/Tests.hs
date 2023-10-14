@@ -43,8 +43,8 @@ fact =
 
 factSpec :: Spec
 factSpec = describe "fact" $ do 
-    -- fact [a=5] ~> y=120
-    it "M.get \"a\" (exec fact (M.fromList [(\"a\", 252), (\"b\", 105)])) == Just 21" $
+    -- fact [x=5] ~> y=120
+    it "M.get \"y\" (exec fact (M.fromList [(\"x\", 5)])) == Just 120" $
       M.get "y" (exec fact (M.fromList [("x", 5)])) `shouldBe` Just 120 
     
 
